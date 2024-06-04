@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Diary application</title>
+  <link rel="stylesheet" type="text/css" href="/styles/main.css">
+</head>
+
+<body>
+  <h1>Welcome to your diary <%= username %></h1> 
+
+  <form action="/menu" method="GET" class="buttons">
+    <button type="submit" value="view-posts" name="choice" class="menuButtons" formaction="/view-posts">View posts</button>
+    <button type="submit" value="new-post" name="choice" class="menuButtons" formaction="/new-post">New post</button>
+    <button type="submit" value="inspiration" name="choice" class="menuButtons" formaction="/inspiration">Get inspired</button>
+  </form>
+  <div id="contentContainer" class="hidden">
+    <%if (locals.entry) {%>
+        <ul id="entryList">
+
+            <% entry.forEach(singleEntry => { %>
+                <h2><%= singleEntry.name %></h2>
+                <li><%= singleEntry.date.day %>/<%= singleEntry.date.month %>/<%= singleEntry.date.year %></li>
+                <li><%= singleEntry.content %></li>
+    
+                <% }) %>
+
+        </ul>
+ 
+      <%};%>
+   
+
+
+
+  </div>
+</body>
+
+</html>
