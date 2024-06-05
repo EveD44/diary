@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html>
+<%- include("partials/header.ejs") %>
 
-<head>
-  <title>Diary application</title>
-  <link rel="stylesheet" type="text/css" href="/styles/main.css">
-</head>
-
-<body>
-  <h1>Welcome to your diary <%= username %></h1> 
+  
+<div class="page-top">
+    <a href="/"><img src="/home-icon.png"></a>
+    <h1>Welcome to your diary <%= username %></h1> 
+</div>
 
   <form action="/menu" method="GET" class="buttons">
     <button type="submit" value="view-posts" name="choice" class="menuButtons" formaction="/view-posts">View posts</button>
@@ -24,7 +21,7 @@
                 <li><%= singleEntry.content %></li>
     
                 <% }) %>
-
+ 
         </ul>
  
       <%};%>
