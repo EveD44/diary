@@ -1,26 +1,24 @@
 [
-  {
-    "id": "0001",
-    "type": "entry",
-    "name": "First day at work",
-    "date":
-      {
-        "year": "2024",
-        "month": "02", 
-        "day": "01"
-      },
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dolor dignissim, finibus ligula nec, imperdiet tortor. Nam ac leo ante. Cras volutpat, tellus quis pretium commodo, odio lorem gravida diam, sit amet imperdiet turpis massa in erat. Proin tempus dolor vel pulvinar sodales. Nunc placerat sapien in vestibulum blandit. Integer id velit et risus blandit consectetur. Nunc malesuada lacus blandit urna mollis, at aliquam nisi bibendum. Maecenas eget quam ligula. Morbi arcu orci, fringilla nec suscipit et, lacinia quis ipsum. Vestibulum ac neque eget elit elementum consectetur. Nam eget pharetra metus. Sed ornare venenatis nulla vel commodo. Suspendisse faucibus turpis lacus, vitae varius nisl luctus a. Cras consequat bibendum nisl a dapibus. Morbi quis vestibulum augue. Maecenas finibus nisl faucibus lacus consequat imperdiet."
-  },
-  {
-      "id": "0002",
-      "type": "entry",
-      "name": "Christmas",
-      "date":
-        {
-          "year": "2023",
-          "month": "12", 
-          "day": "26"
+    {
+        "id": 1,
+        "type": "entry",
+        "name": "First day at work",
+        "date": {
+            "year": 2024,
+            "month": 2,
+            "day": 1
         },
-      "content": "In laoreet gravida ligula. Praesent interdum vehicula libero sit amet elementum. Curabitur fermentum laoreet enim, eget pharetra nisi luctus eu. Sed tincidunt tellus nunc, ut iaculis purus varius nec. Mauris nec auctor dui. Cras ultricies erat ac nunc scelerisque tempus. Phasellus varius massa id sem vulputate, id luctus lorem sollicitudin. Aliquam ullamcorper, quam id commodo semper, risus urna ultrices nunc, vitae malesuada eros purus ut leo."      
-  }
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et dolor dignissim, finibus ligula nec, imperdiet tortor. Nam ac leo ante. Cras volutpat, tellus quis pretium commodo, odio lorem gravida diam, sit amet imperdiet turpis massa in erat. Proin tempus dolor vel pulvinar sodales. Nunc placerat sapien in vestibulum blandit. Integer id velit et risus blandit consectetur. Nunc malesuada lacus blandit urna mollis, at aliquam nisi bibendum. Maecenas eget quam ligula. Morbi arcu orci, fringilla nec suscipit et, lacinia quis ipsum. Vestibulum ac neque eget elit elementum consectetur. Nam eget pharetra metus. Sed ornare venenatis nulla vel commodo. Suspendisse faucibus turpis lacus, vitae varius nisl luctus a. Cras consequat bibendum nisl a dapibus. Morbi quis vestibulum augue. Maecenas finibus nisl faucibus lacus consequat imperdiet."
+    },
+    {
+        "id": 2,
+        "type": "entry",
+        "name": "Christmas",
+        "date": {
+            "year": 2023,
+            "month": 12,
+            "day": 26
+        },
+        "content": "In laoreet gravida ligula. Praesent interdum vehicula libero sit amet elementum. Curabitur fermentum laoreet enim, eget pharetra nisi luctus eu. Sed tincidunt tellus nunc, ut iaculis purus varius nec. Mauris nec auctor dui. Cras ultricies erat ac nunc scelerisque tempus. Phasellus varius massa id sem vulputate, id luctus lorem sollicitudin. Aliquam ullamcorper, quam id commodo semper, risus urna ultrices nunc, vitae malesuada eros purus ut leo."
+    }
 ]
