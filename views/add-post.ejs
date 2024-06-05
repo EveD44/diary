@@ -1,17 +1,22 @@
 <%- include("partials/header.ejs") %>
 
+<div class="page-top">
+    <a href="/"><img src="/home-icon.png"></a>
+    <h1>Add an entry</h1>
+</div>
 
-  <h1>Add an entry</h1>
+
 
   <form action="/submit" method="POST" class="diary-entry-form">
     <input type="text" name="title" class="entry-title" placeholder="Title">
-    <br /><br />
     <textarea name="content" placeholder="Diary entry"></textarea>
-    <br /><br />
+    <br />
     <button type="submit" id="entryButton">OK</button>
 </form>
 
+<%if (locals.message) {%>
+    <p id="success-message"><%= message %></p>
 
-</body>
+  <%};%>
 
 </html>

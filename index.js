@@ -8,6 +8,7 @@ const port = 3000;
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
+app.set('view engine', 'ejs');
 
 // Add Entry
 function addEntry(inputTitle, inputContent) {
@@ -45,30 +46,31 @@ function addEntry(inputTitle, inputContent) {
 
 let entry_data;
 let entry;
-//console.log(entries_data[1]);
 
 app.get("/", (req, res) => {
   res.render("index.ejs", { 
     username: "Eve" });
-    //console.log(entries_data);
 });
 
 app.get("/view-posts", (req, res) => {
     res.render("index.ejs", { 
       entry: entries_data, 
       username: "Eve" });
-      console.log(entry);
   });
 
-app.get("/new-post", (req, res) => {
+app.get("/add-post", (req, res) => {
     res.render("add-post.ejs");
+})
+
+app.get("/success", (req, res) => {
+    res.render("add-post.ejs", {message: "NEW DIARY ENTRY CREATED!"})
 })
 
 app.post("/submit", (req, res) => {
     let title = req.body.title;
     let content = req.body.content;
     addEntry(title, content);
-    res.redirect("/new-post")
+    res.redirect("/success")
 })
 
 

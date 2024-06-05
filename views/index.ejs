@@ -8,7 +8,7 @@
 
   <form action="/menu" method="GET" class="buttons">
     <button type="submit" value="view-posts" name="choice" class="menuButtons" formaction="/view-posts">View posts</button>
-    <button type="submit" value="new-post" name="choice" class="menuButtons" formaction="/new-post">New post</button>
+    <button type="submit" value="new-post" name="choice" class="menuButtons" formaction="/add-post">New post</button>
     <button type="submit" value="inspiration" name="choice" class="menuButtons" formaction="/inspiration">Get inspired</button>
   </form>
   <div id="contentContainer" class="hidden">
@@ -16,7 +16,7 @@
         <ul id="entryList">
 
             <% entry.forEach(singleEntry => { %>
-                <h2><%= singleEntry.name %></h2>
+                <h2><%= singleEntry.title %></h2>
                 <li><%= singleEntry.date.day %>/<%= singleEntry.date.month %>/<%= singleEntry.date.year %></li>
                 <li><%= singleEntry.content %></li>
     
@@ -25,11 +25,9 @@
         </ul>
  
       <%};%>
-   
-
-
 
   </div>
+  <div class="gap"></div>
 </body>
 
 </html>
