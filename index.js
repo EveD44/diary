@@ -2,6 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import  entries_data from './diary-entries.json'  with { type: "json" };
 import * as fs from "fs";
+import axios from "axios";
 
 const app = express();
 const port = 3000;
