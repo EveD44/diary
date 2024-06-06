@@ -66,6 +66,8 @@ app.get("/success", (req, res) => {
     res.render("add-post.ejs", {message: "NEW DIARY ENTRY CREATED!"})
 })
 
+
+
 app.post("/submit", (req, res) => {
     let title = req.body.title;
     let content = req.body.content;
