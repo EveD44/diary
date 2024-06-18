@@ -2,6 +2,9 @@
 
 entries.ejs
 
+diary-entries.json 
+
+
 # Logs
 logs
 *.log

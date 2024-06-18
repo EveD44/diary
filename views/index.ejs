@@ -11,6 +11,7 @@
     <button type="submit" value="new-post" name="choice" class="menuButtons" formaction="/add-post">New post</button>
     <button type="submit" value="inspiration" name="choice" class="menuButtons" formaction="/inspiration">Get inspired</button>
   </form>
+ 
   <div id="contentContainer" class="hidden">
     <%if (locals.entry) {%>
         <ul id="entryList">
@@ -18,9 +19,9 @@
             <% entry.forEach(singleEntry => { %>
                 <h2><%= singleEntry.title %></h2>
                 <li><%= singleEntry.date.day %>/<%= singleEntry.date.month %>/<%= singleEntry.date.year %></li>
-                <li><%= singleEntry.content %></li>
-    
-                <% }) %>
+                <li class="blog-content"><div class="weather-icon"><img src="/weather-icons/icon-<%= singleEntry.image %>.png"  name="weathericon"></div><p><%= singleEntry.content %></p></li>
+                <div class="entry-gap"></div>
+            <% }) %>
  
         </ul>
  

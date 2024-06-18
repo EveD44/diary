@@ -9,7 +9,17 @@
 
   <form action="/submit" method="POST" class="diary-entry-form">
     <input type="text" name="title" class="entry-title" placeholder="Title">
-    <textarea name="content" placeholder="Diary entry"></textarea>
+    <textarea name="content" placeholder="Diary entry" value=></textarea>
+    <br />
+    <% if (locals.activity) { %> 
+      <% if (activity == 1) { %> 
+        <img src="/weather-icons/icon-45.png" class="weather-icon" name="weathericon">
+        <input type="hidden" name="weathericon" value="45" />
+      <% } else { %>
+      <img src="/weather-icons/icon-<%= activity.DailyForecasts[0].Day.Icon %>.png" class="weather-icon" name="weathericon">
+      <input type="hidden" name="weathericon" value="<%= activity.DailyForecasts[0].Day.Icon %>" />
+      <p><%= activity.DailyForecasts[0].Day.Icon %></p>
+    <% }}  %>
     <br />
     <button type="submit" id="entryButton">OK</button>
 </form>
